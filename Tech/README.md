@@ -6,9 +6,10 @@ This directory provides a cross-chain messaging prototype named after "MyOApp" t
 
 The implementation is based on LayerZero V2 and has the following directories and files:
 
-- **contract** has contract *MyOApp.sol* that is based on LayerZero V2 to send and receive messages cross-chain.
+- **contracts** has contract *MyOApp.sol* that is based on LayerZero V2 to send and receive messages cross-chain.
 - **deploy** has file *MyOApp.ts* to deploy contracts on testnets with Hardhat.
-- **test** contains *MyOApp.test.ts* with test cases.
+- **tasks** has file *sendStringWithEid.ts* with a task to send a string cross‐chain using MyOApp contracts.
+- **test** contains *MyOApp.test.ts* with two test cases.
 - *.env* requires a private key to check contracts on testnets.
 - *hardhat.config.ts* contains configuration information for deployment with Hardhat. Currently, we use only Arbitrum, Base, and Optimism testnets. The information for Avalanche and Amoy testnets are provided as comments.
 - *layerzero.config.ts* contains configuration information for LayerZero V2. This current setting allows instances on Arbitrum, Base, and Optimism testnets communicate each others.
