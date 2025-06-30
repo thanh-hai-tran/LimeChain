@@ -13,6 +13,7 @@ The implementation is based on LayerZero V2 and has the following directories an
 - *.env* requires a private key to check contracts on testnets.
 - *hardhat.config.ts* contains configuration information for deployment with Hardhat. Currently, we use only Arbitrum, Base, and Optimism testnets. The information for Avalanche and Amoy testnets are provided as comments.
 - *layerzero.config.ts* contains configuration information for LayerZero V2. This current setting allows instances on Arbitrum, Base, and Optimism testnets communicate each others.
+- *Architecture and Message Flow Design.pdf* describes the architecture and message flow design.
 
 ## Security
 
